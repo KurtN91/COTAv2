@@ -1,0 +1,55 @@
+<h3>Contact Us</h3>
+<br><br>
+<b>Children of the Americas</b>
+<p>
+    838 East High Street, #282<br>
+    Lexington, KY 40502<br>
+    Phone: (859) 608-7747<br>
+    E-mail: green71957@aol.com
+</p>
+<br>
+<hr>
+<br>
+<form id="contact_form" action="../mailer.php" method="POST" enctype="multipart/form-data">
+	<div class="row">
+		<label for="name">Your name*:</label><br />
+		<input id="name" class="input" name="name" type="text" value="" size="30" required/><br />
+	</div><br>
+	<div class="row">
+		<label for="email">Your email*:</label><br />
+		<input id="email" class="input" name="email" type="text" value="" size="30" required/><br />
+	</div><br>
+    <div class="row">
+		<label for="phone">Phone number:</label><br />
+		<input id="phone" class="input" name="phone" type="text" value="" size="30" required/><br />
+	</div><br>
+	<div class="row">
+		<label for="message">Your message*:</label><br />
+		<textarea id="message" class="input" name="message" rows="7" cols="30" required></textarea><br />
+	</div><br>
+    <div class="row">
+        <label for="street-address">Street Address:</label><br />
+        <input id="street-address" class="input" name="street-address" type="text" value="" size="30"/><br />
+    </div><br>
+    <div class="row">
+        <label for="street-address2">Street Address 2:</label><br />
+        <input id="street-address2" class="input" name="street-address2" type="text" value="" size="30"/><br />
+    </div><br>
+    <div class="row">
+		<label for="city">City:</label><br />
+		<input id="city" class="input" name="city" type="text" value="" size="30" /><br />
+	</div><br>
+    <div class="row">
+		<label for="state">State or province:</label><br />
+		<input id="state" class="input" name="state" type="text" value="" size="30" /><br />
+	</div><br>
+    <div class="row">
+		<label for="zip">Zip or postal code:</label><br />
+		<input id="zip" class="input" name="zip" type="text" value="" size="30" /><br />
+	</div><br>
+    <div class="g-recaptcha" data-sitekey="6LechC4UAAAAAN05ZhPGnkI1tp8LMLaqrR03qtvA"></div>
+    <br>
+	<input id="submit_button" type="submit" value="Send" />
+</form>						
+
+					

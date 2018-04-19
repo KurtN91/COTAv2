@@ -1,0 +1,71 @@
+<head lang="en">
+    <base href="/">
+    <meta charset="UTF-8">
+    <title>Children of The Americas</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Open+Sans:400,800,600,700,300">
+    <link rel="stylesheet" type="text/css" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+</head>
+
+<body>
+
+    <div id="fb-root"></div>
+    <script>
+        (function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s);
+            js.id = id;
+            js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.12';
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
+    <nav class="navbar">
+        <!-- nav bar -->
+        <a routerLink='' class="logo">
+            <img src="assets/images/cota_logo_2.png" alt="COTA logo">
+        </a>
+        <div class="links-container">
+            <a routerLink="board" class="navbar-link">Board Member Page</a>
+            <a routerLink="programs" class="navbar-link">Our Programs</a>
+            <a routerLink="stateside" class="navbar-link">Stateside Program</a>
+            <a routerLink="partners" class="navbar-link">Our Partners</a>
+            <a routerLink="news" class="navbar-link">News And Events</a>
+            <a routerLink="donations" class="navbar-link">Donations</a>
+            <a routerLink="contact" class="navbar-link">Contact Us</a>
+        </div>
+    </nav>
+
+    <div class="sidebar">
+        <a href="https://greatnonprofits.org/reviews/write/children-of-the-americas-cota">
+            <img alt="Children of the Americas" src="assets/images/greatnonprofits.png" width="200" height="120">
+        </a>
+        <br>
+        <p id="review">Writing a Review on our Great NonProfit Site Allows Us to Keep Our Top-Rated Status. Click on the logo to go directly to our GNP site.</p>
+        <br>
+        <hr>
+        <br>
+        <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FChildren-of-The-Americas-208910832481368%2F&tabs=timeline&width=180&height=400&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId"
+            width="180" height="400" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+        <br>
+        <br>
+        <form name="_xclick" action="https://www.paypal.com/yt/cgi-bin/webscr" method="post">
+            <input type="hidden" name="cmd" value="_xclick">
+            <input type="hidden" name="business" value="donate@childrenoftheamericas.org">
+            <input type="hidden" name="item_name" value="Children of the Americas">
+            <input type="hidden" name="currency_code" value="USD">
+            <input type="hidden" name="amount" value="0.00">
+            <input id="paypal" type="image" src="http://www.paypal.com/en_US/i/btn/x-click-butcc-donate.gif" border="0" name="submit" alt="Make payments with PayPal - it's fast, free and secure!">
+        </form>
+    </div>
+
+    <router-outlet></router-outlet>
+
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/buzz/1.1.10/buzz.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.min.js"></script>
+    <script src="/scripts/app.js"></script>
+
+
+</body>
